@@ -112,7 +112,7 @@ $(document).ready(function () {
          * @param data {object} Fields: {downvote:false,post:{pid:"14",uid: 4,votes:2},upvote:true,user:{reputation:3}}
          */
         function likeDidChange(data) {
-            var label = data.upvote ? ' Unlike' : ' Like';
+            var label = data.upvote ? ' Ontkudo' : ' Kudo';
             getComponentByPostId(data.post.pid, components.TOGGLE_BUTTON).toggleClass('liked', data.upvote).text(label);
         }
 
